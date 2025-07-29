@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style imgs.css">
+</head>
+<body>
+
+  <h1>Responsive Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1023/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1075/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1020/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1028/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1010/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1077/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1065/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1014/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1017/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1048/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1035/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1045/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1044/600/400" alt="Gallery Image" onclick="openLightbox(this)">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-controls">
+      <button onclick="prevImage()">❮</button>
+      <button onclick="nextImage()">❯</button>
+    </div>
+  </div>
+
+  <script src="script imgs.js"></script>
+</body>
+</html>
